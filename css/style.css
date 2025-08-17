@@ -1,0 +1,345 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* For login, register, and admin dashboard pages */
+.page-center {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    width: 100%;
+}
+
+.form-heading, .dashboard-heading {
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.form-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+    padding: 2rem 2.2rem 1.5rem 2.2rem;
+    width: 100%;
+    max-width: 390px;
+    margin-bottom: 1.5rem;
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
+    padding: 0.7rem;
+}
+
+.form-link {
+    display: block;
+    margin-top: 1.1rem;
+    text-align: center;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #1e3a8a;
+    padding: 0.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    margin-left: 0.5rem;
+    transition: color 0.3s ease;
+    font-size: 1rem;
+}
+
+.nav-link:hover {
+    color: #93c5fd !important;
+}
+
+.navbar-toggler {
+    border-color: #ffffff;
+}
+
+.navbar-toggler-icon {
+    background-color: #ffffff;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 400px;
+    background: url('university.png') no-repeat center center; /* Default center */
+    background-size: cover; /* Fill the area, no gray bars */
+    background-position: center 30%; /* Moves image down a bit for better balance */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color:white;
+    margin-bottom: 0;
+}
+
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.37);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 1.2rem 0.7rem;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    animation: fadeIn 0.7s ease-in;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.btn-custom {
+    background-color: #3b82f6;
+    color: #ffffff;
+    padding: 0.5rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #2563eb;
+}
+
+/* Features Section */
+.features h2 {
+    color: #1e3a8a;
+    margin: 2.3rem 0 1.3rem 0;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    color: #1e3a8a;
+    font-size: 1.1rem;
+}
+
+.card-text {
+    color: #555;
+    font-size: 1rem;
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    max-height: 170px;
+    object-fit: cover;
+}
+
+.container .card {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1.2rem;
+    margin-top: 1rem;
+}
+
+.btn-primary, .btn-secondary, .btn-success, .btn-danger {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary { background-color: #3b82f6; }
+.btn-primary:hover { background-color: #2563eb; }
+.btn-secondary { background-color: #6b7280; color: #fff; }
+.btn-secondary:hover { background-color: #4b5563; }
+.btn-success { background-color: #10b981; color: #fff; }
+.btn-success:hover { background-color: #059669; }
+.btn-danger { background-color: #ef4444; color: #fff; }
+.btn-danger:hover { background-color: #dc2626; }
+
+/* Tables */
+.table {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 1rem;
+}
+
+.table th {
+    background-color: #1e3a8a;
+    color: #000;
+}
+
+.table td, .table th {
+    padding: 1rem;
+    vertical-align: middle;
+}
+
+/* Navigation Tabs (for Admin Dashboard) */
+.nav-tabs {
+    margin-top: 1.8rem;
+    margin-bottom: 2.2rem;
+    font-size: 1.1rem;
+}
+.nav-tabs .nav-link {
+    color: #333333 !important;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-bottom: none;
+    margin-right: 0.5rem;
+    font-size: 1.05rem;
+}
+
+.nav-tabs .nav-link:hover {
+    color: #93c5fd !important;
+}
+
+.nav-tabs .nav-link.active {
+    color: #1e3a8a !important;
+    background-color: #ffffff;
+    border-color: #dee2e6 #dee2e6 #ffffff;
+}
+
+/* Admin Dashboard heading */
+.admin-heading {
+    margin-top: 2.3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #1e3a8a;
+    color: #fff;
+    padding: 0.75rem 0 0.9rem 0;
+    margin-top: auto;
+    text-align: center;
+    width: 100%;
+    flex-shrink: 0;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.footer p {
+    margin: 0.3rem 0 0 0;
+    line-height: 2;
+}
+
+/* Headings */
+h2 {
+    font-size: 1.5rem;
+    margin: 1.2rem 0 0.7rem;
+    text-align: center;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        height: 120px;
+    }
+    .hero h1 {
+        font-size: 1.1rem;
+    }
+    .hero p {
+        font-size: 0.8rem;
+    }
+    .card {
+        margin-bottom: 1rem;
+    }
+    .container .card {
+        padding: 0.7rem;
+    }
+    h2 {
+        font-size: 1.1rem;
+    }
+    .footer {
+        font-size: 0.9rem;
+        padding: 0.6rem 0 0.7rem 0;
+    }
+    .admin-heading {
+        font-size: 1.2rem;
+        margin-top: 1.2rem;
+        margin-bottom: 1.1rem;
+    }
+}
+
+/* Extra: For perfect vertical centering for small content */
+@media (min-width: 768px) {
+    .page-center {
+        min-height: 75vh;
+    }
+}
